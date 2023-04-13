@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form method="get">
+        <h2>Крок 1. Основні дані</h2>
+        <label>
+            Name
+            <input required placeholder="First and last name" type="text" name="name" >
+        </label>
+        <label>
+            Email 
+         <input pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required placeholder="example@domain.com" type="email" name="email" >
+        </label>
+        <label ">
+            Phone
+        <input required placeholder="+380XX-XXX-XX-XX" type="text" name="phone">
+        </label>
+
+        <h2>Крок 2: Адреса доставки</h2>
+        <label>Address
+            <textarea required name="adress" cols="15" rows="3"></textarea>
+        </label>
+        <label>Post code
+            <input required type="text" name="post-code">
+        </label>
+        <label>Country
+            <input required type="text" name="country">
+        </label>
+
+        <input type="submit" value="Submit">
+
+    </form>
+    
+</body>
+</html>

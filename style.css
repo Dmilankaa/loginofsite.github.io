@@ -1,0 +1,21 @@
+body{
+    background-color: #98ad4a;
+
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+label{
+    background-color: #bcd65a;
+    padding: 12px;
+    border-radius: 8px;
+    border: 3px solid rgb(218 , 234, 142);
+}
+
+input::placeholder{
+    color: gray;
+    font-weight: 600;
+}
